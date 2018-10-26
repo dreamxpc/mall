@@ -9,8 +9,8 @@
 <body>
 	<h2>addMember Form</h2>
 	<form action="<%=request.getContextPath()%>/addMember" method="post">
-		아이디 : <input type="text" name="id"><br>
-		비밀번호 : <input type="password" name="pw"><br>
+		아이디 : <input type="text" name="id"><br> 
+		비밀번호 : <input type="password" name="pw"><br> 
 		권한 : <select name="level">
 		<option value="1">관리자</option>
 		<option value="0">고객</option>

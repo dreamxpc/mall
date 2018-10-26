@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,12 +17,15 @@
 			<th>주문</th>
 		</tr>
 		<c:forEach var="item" items="${list}">
-		<tr>
-		<td>${item.no}</td> <!-- item.getNo -->
-		<td>${item.no}</td> <!-- item.getNo -->
-		<td>${item.no}</td> <!-- item.getNo -->
-		<td><a href="${pageContext.request.contextPath}/Order">주문</a></td>
-		</tr>		
+			<tr>
+				<td>${item.no}</td>
+				<!-- item.getNo -->
+				<td>${item.no}</td>
+				<!-- item.getNo -->
+				<td>${item.no}</td>
+				<!-- item.getNo -->
+				<td><a href="${pageContext.request.contextPath}/Order">주문</a></td>
+			</tr>
 		</c:forEach>
 	</table>
 	<div>
