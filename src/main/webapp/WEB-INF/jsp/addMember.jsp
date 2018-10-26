@@ -9,13 +9,26 @@
 <body>
 	<h2>addMember Form</h2>
 	<form action="<%=request.getContextPath()%>/addMember" method="post">
-		아이디 : <input type="text" name="id"><br> 
-		비밀번호 : <input type="password" name="pw"><br> 
-		권한 : <select name="level">
-		<option value="1">관리자</option>
-		<option value="0">고객</option>
-		</select><br>
-		<button type="submit">가입</button>
+		<table border="1">
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id" size="20"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pw" size="20"></td>
+			</tr>
+			<tr>
+				<td>권한</td>
+				<td><select name="level">
+						<option value="1">관리자</option>
+						<option value="0">고객</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="4"><button type="submit">가입</button></td>
+			</tr>
+		</table>
 	</form>
 </body>
 </html>
